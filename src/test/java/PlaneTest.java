@@ -10,7 +10,7 @@ public class PlaneTest {
 
     @Before
     public void before() {
-        plane1 = new Plane("CS123", "CESSNA");
+        plane1 = new Plane("CS123", PlaneType.CESSNA);
     }
 
     @Test
@@ -20,6 +20,6 @@ public class PlaneTest {
 
     @Test
     public void hasPlaneTyoe() {
-        assertEquals("CESSNA", plane1.getPlaneType());
+        assertEquals(PlaneType.CESSNA, plane1.getPlaneType());
     }
 }

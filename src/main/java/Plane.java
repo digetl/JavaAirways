@@ -12,4 +12,7 @@ public class Plane {
         return name;
     }
 
+    public PlaneType getPlaneType() {
+        return planeType;
+    }
 }
