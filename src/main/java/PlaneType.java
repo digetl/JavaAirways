@@ -1,7 +1,7 @@
 public enum PlaneType {
-    CESSNA(100, 400),
-    CONAIR(400,1600),
-    PIPER(150,600);
+    CESSNA(3, 400),
+    CONAIR(20,1600),
+    PIPER(5,600);
 
 
     private final int capacity;
