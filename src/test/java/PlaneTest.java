@@ -19,7 +19,7 @@ public class PlaneTest {
     }
 
     @Test
-    public void hasPlaneTyoe() {
+    public void hasPlaneType() {
         assertEquals(PlaneType.CESSNA, plane1.getPlaneType());
     }
 }

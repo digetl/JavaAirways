@@ -40,4 +40,9 @@ public class FlightTest {
       assertEquals(0, flight1.countPassengers());
    }
 
+   @Test
+   public void hasAPlaneAssigned(){
+      assertEquals("CS123", flight1.getPlaneName());
+   }
+
 }
