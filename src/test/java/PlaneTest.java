@@ -15,6 +15,6 @@ public class PlaneTest {
 
     @Test
     public void hasName() {
-        assertEquals("CS123", getName());
+        assertEquals("CS123", plane1.getName());
     }
 }
