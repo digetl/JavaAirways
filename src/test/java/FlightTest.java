@@ -9,10 +9,12 @@ public class FlightTest {
    private Flight flight1;
    private Flight flight2;
    private Flight flight3;
+   private Plane plane1;
 
    @Before
     public void before(){
-       flight1 = new Flight("GAT", "EDI","JA1445", "13:18");
+      plane1 = new Plane("CS123", PlaneType.CESSNA);
+       flight1 = new Flight("GAT", "EDI","JA1445", "13:18", plane1);
    }
 
    @Test
@@ -42,7 +44,7 @@ public class FlightTest {
 
    @Test
    public void hasAPlaneAssigned(){
-      assertEquals("CS123", flight1.getPlaneName());
+      assertEquals(plane1, flight1.getPlane());
    }
 
 }
