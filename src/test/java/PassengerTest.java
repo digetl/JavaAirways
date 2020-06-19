@@ -5,22 +5,23 @@ import static org.junit.Assert.assertEquals;
 
 public class PassengerTest {
 
-    private Passenger passenger;
+    private Passenger passenger1;
+    private Passenger passenger2;
 
     @Before
     public void before() {
-        passenger = new Passenger("Dave Campbell", 0);
-        passenger = new Passenger("Kirsty Campbell", 2);
+        passenger1 = new Passenger("Dave Campbell", 0);
+        passenger2 = new Passenger("Kirsty Campbell", 2);
     }
 
     @Test
     public void hasName() {
-    assertEquals("Dave Campbell", passenger.getName());
+    assertEquals("Dave Campbell", passenger1.getName());
     }
 
     @Test
     public void checkForBaggage__None() {
-        assertEquals(2, passenger.getBaggage());
+        assertEquals(0, passenger1.getBaggage());
     }
 
 }
