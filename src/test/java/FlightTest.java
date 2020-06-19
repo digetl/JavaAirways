@@ -12,7 +12,7 @@ public class FlightTest {
 
    @Before
     public void before(){
-       flight1 = new Flight("GAT", "EDI","JA1445", "13:18" );
+       flight1 = new Flight("GAT", "EDI","JA1445", "13:18");
    }
 
    @Test
