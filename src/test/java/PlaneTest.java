@@ -10,11 +10,16 @@ public class PlaneTest {
 
     @Before
     public void before() {
-        plane1 = new Plane("CS123");
+        plane1 = new Plane("CS123", "CESSNA");
     }
 
     @Test
     public void hasName() {
         assertEquals("CS123", plane1.getName());
+    }
+
+    @Test
+    public void hasPlaneTyoe() {
+        assertEquals("CESSNA", plane1.getPlaneType());
     }
 }
