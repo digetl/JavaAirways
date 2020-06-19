@@ -24,4 +24,8 @@ public class PassengerTest {
         assertEquals(0, passenger1.getBaggage());
     }
 
+    @Test
+    public void checkForBaggage__Two() {
+        assertEquals(2, passenger2.getBaggage());
+    }
 }
