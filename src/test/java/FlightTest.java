@@ -54,12 +54,15 @@ public class FlightTest {
    @Test
    public void hasPlaneName() {
 //      assertEquals("CS123", plane1.getName());
-      assertEquals("CS123", flight1.getPlane().getName());
+//      assertEquals("CS123", flight1.getPlane().getName());
+      assertEquals("CS123", flight1.getPlaneName());
    }
-
-//   public void getNumberOfFreeSeats() {
-//      assertEquals(3, flight1.getEmptySeats());
-//   }
+//
+   @Test
+   public void canAddPassenger() {
+      flight1.addPassenger(passenger1);
+      assertEquals(2, flight1.getEmptySeats());
+   }
 
 
 }

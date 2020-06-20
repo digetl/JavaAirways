@@ -42,4 +42,22 @@ public class Flight {
     public Plane getPlane() {
         return plane;
     }
+
+    public String getPlaneName() {
+        return plane.getName();
+    }
+
+    public int getEmptySeats() {
+        int emptySeats = getCapacityOfPlane() - bookedPassengers.size();
+        return emptySeats;
+    }
+
+    public int getCapacityOfPlane() {
+        return plane.getNumberOfSeats();
+    }
+
+
+    public void addPassenger(Passenger passenger) {
+        bookedPassengers.add(passenger);
+    }
 }
