@@ -51,8 +51,14 @@ public class FlightTest {
       assertEquals(plane1, flight1.getPlane());
    }
 
+   @Test
+   public void hasPlaneName() {
+//      assertEquals("CS123", plane1.getName());
+      assertEquals("CS123", flight1.getPlane().getName());
+   }
+
 //   public void getNumberOfFreeSeats() {
-//      assertEquals(flight1);
+//      assertEquals(3, flight1.getEmptySeats());
 //   }
 
 

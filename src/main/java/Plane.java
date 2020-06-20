@@ -16,7 +16,11 @@ public class Plane {
         return planeType;
     }
 
-    public int getNumberofSeats() {
+    public int getNumberOfSeats() {
         return planeType.getCapacity();
+    }
+
+    public int getWeightLimit() {
+        return planeType.getWeightLimit();
     }
 }
