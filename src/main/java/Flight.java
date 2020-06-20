@@ -16,7 +16,6 @@ public class Flight {
         this.departureTime = departureTime;
         this.plane = plane;
         this.bookedPassengers = new ArrayList<Passenger>();
-
     }
 
     public String getDestination() {
@@ -48,16 +47,19 @@ public class Flight {
     }
 
     public int getEmptySeats() {
-        int emptySeats = getCapacityOfPlane() - bookedPassengers.size();
-        return emptySeats;
+        return getCapacityOfPlane() - bookedPassengers.size();
     }
 
     public int getCapacityOfPlane() {
         return plane.getNumberOfSeats();
     }
 
-
-    public void addPassenger(Passenger passenger) {
-        bookedPassengers.add(passenger);
+    public boolean addPassenger(Passenger passenger) {
+        if (getCapacityOfPlane() == bookedPassengers.size())
+            return false;
+        else
+            bookedPassengers.add(passenger);
+            return true;
     }
+
 }

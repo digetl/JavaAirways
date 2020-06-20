@@ -22,8 +22,4 @@ public class PlaneTest {
     public void hasPlaneType() {
         assertEquals(PlaneType.CESSNA, plane1.getPlaneType());
     }
-//    @Test
-//    public void countNumberOfSeats(){
-//        assertEquals(3,plane1.getNumberOfSeats());
-//    }
 }
