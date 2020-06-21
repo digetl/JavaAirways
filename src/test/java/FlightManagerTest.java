@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class FlightManagerTest {
 
 
@@ -21,6 +23,14 @@ public class FlightManagerTest {
         flight1 = new Flight("GAT", "EDI","JA1445", "13:18", plane1);
     }
 
+
+    @Test
+    public void checkTotalNumberOfBagsOnFlight() {
+        flight1.addPassenger(passenger1);
+        flight1.addPassenger(passenger2);
+        flight1.addPassenger(passenger3);
+        assertEquals(2, flight1.getNumberOfBagsLoaded());
+    }
 
 
 }
