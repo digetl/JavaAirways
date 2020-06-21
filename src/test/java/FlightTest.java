@@ -83,8 +83,7 @@ public class FlightTest {
       flight1.addPassenger(passenger1);
       flight1.addPassenger(passenger2);
       flight1.addPassenger(passenger3);
-      flight1.addPassenger(passenger4);
-      assertEquals(4, flight1.getNumberOfBagsLoaded());
+      assertEquals(2, flight1.getNumberOfBagsLoaded());
    }
 
 
