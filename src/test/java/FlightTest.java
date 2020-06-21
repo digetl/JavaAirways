@@ -78,5 +78,15 @@ public class FlightTest {
       assertEquals(3,flight1.countPassengers());
    }
 
+   @Test
+   public void checkTotalNumberOfBagsOnFlight() {
+      flight1.addPassenger(passenger1);
+      flight1.addPassenger(passenger2);
+      flight1.addPassenger(passenger3);
+      flight1.addPassenger(passenger4);
+      assertEquals(4, flight1.getNumberOfBagsLoaded());
+   }
+
+
 
 }

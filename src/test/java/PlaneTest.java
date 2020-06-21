@@ -22,4 +22,10 @@ public class PlaneTest {
     public void hasPlaneType() {
         assertEquals(PlaneType.CESSNA, plane1.getPlaneType());
     }
+
+
+    @Test
+    public void checkWeightLimit() {
+        assertEquals(400, plane1.getWeightLimit());
+    }
 }

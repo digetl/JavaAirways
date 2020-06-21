@@ -62,4 +62,16 @@ public class Flight {
             return true;
     }
 
+    public int getNumberOfBagsLoaded() {
+        int numberOfBagsLoaded = 0;
+//        bookedPassengers.forEach(passenger -> );
+
+        for (int i = 0; i < bookedPassengers.size(); i++) {
+            numberOfBagsLoaded += bookedPassengers.get(i).getBaggage();
+//            System.out.println(bookedPassengers.get(i));
+        }
+
+        return numberOfBagsLoaded;
+    }
+
 }
